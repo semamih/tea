@@ -12,6 +12,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="styles/hover-min.css">
+    <link rel="stylesheet" href="styles/style.css">
     <style>
         /*#0d6efd*/
         body {
@@ -94,14 +95,93 @@
             top: 50%;
             transform: translateY(-50%);
         }
+        .banner-text {
+            padding-top: 210px;
+            padding-left: 120px;
+        }
+        .banner-text:first-child {
+            padding-top: 190px;
+        }
+        .banner-text h2 {
+            font-size: 40px;
+        }
+        .banner-text p {
+            font-size: 20px;
+        }
         @media (max-width: 1290px) {
             .my-custom-container{
                 width:75%;
             }
+            .banner-text{
+                padding-top: 130px;
+                padding-left: 120px;
+            }
         }
-        @media (max-width: 768px) {
+        @media (max-width: 1000px) {
             .my-custom-container{
-                width:90%;
+                width:75%;
+            }
+            .banner-text{
+                padding-top: 100px;
+                padding-left: 80px;
+            }
+        }
+        @media (max-width: 767px) {
+            .mini-label {
+                width: 100%;
+            }
+            .banner-text{
+                padding-top: 50px;
+                padding-left: 30px;
+            }
+            .banner-text h2 {
+                font-size: 30px;
+            }
+            .my-custom-container {
+                width: 90%;
+            }
+            .slick-prev:hover, .slick-prev:focus {
+                display: none;
+            }
+            .slick-next:hover, .slick-next:focus {
+                display: none;
+
+            }
+            .slick-prev {
+                display: none;
+            }
+            .slick-next {
+                display: none;
+            }
+        }
+        @media (max-width: 470px) {
+            .banner-text{
+                padding-top: 30px;
+                padding-left: 10px;
+            }
+            .banner-text h2 {
+                font-size: 20px;
+            }
+            .banner-text p {
+                font-size: 14px;
+            }
+            .banner-text button {
+                font-size: 12px;
+            }
+        }
+        @media (max-width: 375px) {
+            .banner-text{
+                padding-top: 20px;
+                padding-left: 10px;
+            }
+            .banner-text h2 {
+                font-size: 17px;
+            }
+            .banner-text p {
+                font-size: 12px;
+            }
+            .banner-text button {
+                font-size: 12px;
             }
         }
 
@@ -139,48 +219,37 @@
         </form>
     </div>
 </nav>
-<div class="container mt-5 mb-5 d-none d-md-block wow animate__backInDown">
+<div class="container mt-5 wow animate__backInDown mb-5">
     <div class="carousel">
         <div class="container">
             <div class="position-relative">
                 <img src="images/banner-1.png" alt="" class="img-fluid">
-                <div class="position-absolute top-0 start-0 ms-5 mt-5">
-                    <h2 class="mt-5 ms-5 mb-5 fw-bold fs-1 fs-md-2 fs-lg-5">Скидки на травянные чаи</h2>
-                    <p class="ms-5 mb-5 fs-5">Узай все подробности, заполнив заявку</p>
-                    <button class="btn btn-primary ps-5 pe-5 ms-5 mb-5 hvr-grow">Заполнить</button>
+                <div class="position-absolute top-0 start-0  banner-text">
+                    <h2 class="mb-3 mb-md-5 fw-bold ">Скидки на травянные чаи</h2>
+                    <p class="mb-3 mb-md-5">Узай все подробности, заполнив заявку</p>
+                    <button class="btn btn-primary ps-sm-5 pe-sm-5 hvr-grow">Заполнить</button>
                 </div>
             </div>
         </div>
         <div class="container">
-            <div class="position-relative">
+            <div class="position-relative ">
                 <img src="images/banner-2.png" alt="" class="img-fluid">
-                <div class="position-absolute top-0 start-0 ms-5 mt-5">
-                    <h2 class="mt-5 ms-5 mb-5 display-5 fw-bold w-100 fs-1 fs-md-2 fs-lg-3">Закажи три пачки чая <br> и
+                <div class="position-absolute top-0 start-0  banner-text">
+                    <h2 class="mb-3 mb-md-5 fw-bold ">Закажи три пачки чая <br> и
                         получи подарок</h2>
-                    <button class="btn btn-primary ps-5 pe-5 ms-5 mb-5 hvr-grow">Заказать</button>
+                    <button class="btn btn-primary ps-sm-5 pe-sm-5 hvr-grow">Заказать</button>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="position-relative">
+        <div class="container ">
+            <div class="position-relative ">
                 <img src="images/banner-3.png" alt="" class="img-fluid">
-                <div class="position-absolute top-0 start-0 ms-5 mt-5">
-                    <h2 class="mt-5 ms-5 mb-5 display-5 fw-bold w-100 fs-1 fs-md-2 fs-lg-3">Попробуй нашу новинку <br> —
+                <div class="position-absolute top-0 start-0 banner-text">
+                    <h2 class="mb-3 mb-md-5 fw-bold ">Попробуй нашу новинку <br> —
                         ягодный чай</h2>
-                    <button class="btn btn-primary ps-5 pe-5 ms-5 mb-5 hvr-grow">Заказать</button>
+                    <button class="btn btn-primary ps-sm-5 pe-sm-5 hvr-grow">Заказать</button>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-<div class="container d-block d-md-none mb-4 mt-4">
-    <div class="position-relative">
-        <img src="images/banner-1.png" alt="" class="img-fluid">
-        <div class="position-absolute top-0 start-0 ms-2 mt-3">
-            <h2 class="mt-3 mb-3 ms-1 fw-bold fs-5 fs-sm-1 ms-sm-2 mb-sm-3 mt-sm-5">Скидки на травянные чаи</h2>
-            <p class="ms-1 mb-4 fs-6 ms-sm-2 fs-sm-3">Узай все подробности, заполнив заявку</p>
-            <button class="btn btn-primary ps-2 pe-2 ps-sm-4 pe-sm-4 ms-1 ms-sm-2 mb-2 fs-6 hvr-grow"><span
-                    class="">Заполнить</span></button>
         </div>
     </div>
 </div>
@@ -279,19 +348,19 @@
     <div class="w-50 text-start m-auto">
         <div class="row">
             <div class="col-md-4">
-                <label>
+                <label class="mini-label">
                     Имя <br>
                     <input type="text" name="text" id="name" class="mt-2 mb-3 form-control">
                 </label>
             </div>
             <div class="col-md-4">
-                <label>
+                <label class="mini-label">
                     Фамилия <br>
                     <input type="text" name="surname" id="surname" class="mt-2 mb-3 form-control">
                 </label>
             </div>
             <div class="col-md-4">
-                <label>
+                <label class="mini-label"d>
                     Телефон <br>
                     <input type="tel" name="phone" id="phone" class="mt-2 mb-3 form-control">
                 </label>
@@ -299,13 +368,13 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-                <label>
+                <label class="w-100">
                     Страна <br>
                     <input type="text" name="country" id="country" class="mt-2 mb-3 form-control">
                 </label>
             </div>
             <div class="col-md-6">
-                <label>
+                <label class="w-100">
                     Индекс <br>
                     <input type="text" name="index" id="index" class="mt-2 mb-3 form-control">
                 </label>
@@ -313,7 +382,7 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <label>
+                <label class="w-100">
                     Адрес <br>
                     <input type="text" name="address" id="address" class="mt-2 mb-3 form-control w-100">
                 </label>
