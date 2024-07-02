@@ -47,6 +47,7 @@
             color: transparent;
         }
 
+        /*---------------------------------*/
         .ui-accordion .ui-accordion-header {
             background-color: #0d6efd;
             color: #fff;
@@ -67,10 +68,11 @@
         .ui-accordion .ui-accordion-content p {
             margin: 0;
         }
-
         .my-custom-container {
             width: 50%;
         }
+
+        /*---------------------------------*/
         .ui-accordion-header .custom-icon-open {
             background-image: url("images/arrow.png");
             background-size: cover;
@@ -94,10 +96,6 @@
             right:45px;
             top: 50%;
             transform: translateY(-50%);
-        }
-        .banner-text {
-            padding-top: 210px;
-            padding-left: 120px;
         }
         .banner-text:first-child {
             padding-top: 190px;
@@ -140,18 +138,41 @@
             .my-custom-container {
                 width: 90%;
             }
-            .slick-prev:hover, .slick-prev:focus {
-                display: none;
-            }
-            .slick-next:hover, .slick-next:focus {
-                display: none;
-
-            }
             .slick-prev {
-                display: none;
+                left: 200px;
+                top: 265px;
+                height: 30px;
+                width: 30px;
             }
             .slick-next {
-                display: none;
+                right: 200px;
+                top:265px;
+                height: 30px;
+                width: 30px;
+            }
+            .slick-prev:hover, .slick-prev:focus {
+                background-size: 30px 30px;
+            }
+            .slick-next:hover, .slick-next:focus {
+                background-size: 30px 30px;
+            }
+        }
+        @media (max-width: 605px) {
+            .slick-prev {
+                top: 270px;
+            }
+            .slick-next {
+                top: 270px;
+            }
+        }
+        @media (max-width: 500px) {
+            .slick-prev {
+                left: 150px;
+                top: 240px;
+            }
+            .slick-next {
+                right: 150px;
+                top: 240px;
             }
         }
         @media (max-width: 470px) {
@@ -168,6 +189,22 @@
             .banner-text button {
                 font-size: 12px;
             }
+            .slick-prev {
+                top: 220px;
+            }
+            .slick-next {
+                top: 220px;
+            }
+        }
+        @media (max-width: 400px) {
+            .slick-prev {
+                left: 130px;
+                top: 210px;
+            }
+            .slick-next {
+                right: 130px;
+                top: 210px;
+            }
         }
         @media (max-width: 375px) {
             .banner-text{
@@ -183,50 +220,70 @@
             .banner-text button {
                 font-size: 12px;
             }
+            .slick-prev {
+                top: 180px;
+                height: 23px;
+                width: 23px;
+            }
+            .slick-next {
+                top: 180px;
+                height: 23px;
+                width: 23px;
+            }
         }
-
+        @media (max-width: 340px) {
+            .slick-prev {
+                top: 160px;
+            }
+            .slick-next {
+                top: 160px;
+                left: 160px;
+            }
+        }
     </style>
 </head>
 <body>
 
-
-<nav class="navbar navbar-expand-sm navbar-light bg-light ">
-    <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse ms-3 me-3" id="navbarTogglerDemo01">
-        <a class="navbar-brand" href="#">
-            <img src="images/Logo.png" alt="Логотип" width="43" height="19">
-        </a>
-        <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Главная</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Преимущества</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Цены</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Контакты</a>
-            </li>
-        </ul>
-        <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Поиск чая" aria-label="Search">
-            <button class="btn btn-outline-primary" type="submit">Поиск</button>
-        </form>
-    </div>
-</nav>
+<header>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light ">
+        <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-3 me-3" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">
+                <img src="images/Logo.png" alt="Логотип" width="43" height="19">
+            </a>
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Преимущества</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Цены</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Поиск чая" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">Поиск</button>
+            </form>
+        </div>
+    </nav>
+</header>
+<main>
 <div class="container mt-5 wow animate__backInDown mb-5">
     <div class="carousel">
         <div class="container">
             <div class="position-relative">
-                <img src="images/banner-1.png" alt="" class="img-fluid">
-                <div class="position-absolute top-0 start-0  banner-text">
-                    <h2 class="mb-3 mb-md-5 fw-bold ">Скидки на травянные чаи</h2>
-                    <p class="mb-3 mb-md-5">Узай все подробности, заполнив заявку</p>
+                <img src="images/banner-1.png" alt="" class="img-fluid ">
+                <div class="position-absolute top-0 start-0  banner-text pt-lg-5 mt-lg-5 ps-lg-5 ms-lg-5 ">
+                    <h2 class="mb-3 mb-md-5 fw-bold mt-lg-5">Скидки на травянные чаи</h2>
+                    <p class="mb-3 mb-md-5">Узнай все подробности, заполнив заявку</p>
                     <button class="btn btn-primary ps-sm-5 pe-sm-5 hvr-grow">Заполнить</button>
                 </div>
             </div>
@@ -234,8 +291,8 @@
         <div class="container">
             <div class="position-relative ">
                 <img src="images/banner-2.png" alt="" class="img-fluid">
-                <div class="position-absolute top-0 start-0  banner-text">
-                    <h2 class="mb-3 mb-md-5 fw-bold ">Закажи три пачки чая <br> и
+                <div class="position-absolute top-0 start-0  banner-text pt-lg-5 mt-lg-5 ps-lg-5 ms-lg-5">
+                    <h2 class="mb-3 mb-md-5 fw-bold mt-lg-5">Закажи три пачки чая <br> и
                         получи подарок</h2>
                     <button class="btn btn-primary ps-sm-5 pe-sm-5 hvr-grow">Заказать</button>
                 </div>
@@ -244,8 +301,8 @@
         <div class="container ">
             <div class="position-relative ">
                 <img src="images/banner-3.png" alt="" class="img-fluid">
-                <div class="position-absolute top-0 start-0 banner-text">
-                    <h2 class="mb-3 mb-md-5 fw-bold ">Попробуй нашу новинку <br> —
+                <div class="position-absolute top-0 start-0 banner-text pt-lg-5 mt-lg-5 ps-lg-5 ms-lg-5">
+                    <h2 class="mb-3 mb-md-5 fw-bold mt-lg-5">Попробуй нашу новинку <br> —
                         ягодный чай</h2>
                     <button class="btn btn-primary ps-sm-5 pe-sm-5 hvr-grow">Заказать</button>
                 </div>
@@ -254,7 +311,7 @@
     </div>
 </div>
 <div class="container pb-5">
-    <h2 class="fw-bold text-center mb-5">Наши чайные коллекции</h2>
+    <h2 class="fw-bold text-center mb-5 pt-3">Наши чайные коллекции</h2>
     <div class="container text-center">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-6 col-xxl-4 wow animate__backInLeft">
@@ -393,6 +450,7 @@
         </div>
     </div>
 </div>
+</main>
 <footer>
     <p class="ms-3 text-secondary">Все права защищены</p>
 </footer>

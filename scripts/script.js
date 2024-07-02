@@ -35,9 +35,10 @@ $(document).ready(function () {
 
 
     index.keydown(function(e){
-        if(isNaN(parseInt(e.key)) && e.key !== "Backspace"){
+        if(isNaN(parseInt(e.key)) && e.key !== "Backspace" ){
             return false;
         }
+
     });
 
 
@@ -60,6 +61,10 @@ $(document).ready(function () {
         }
         if(!index.val()){
             alert("Введите индекс!");
+            return;
+        }
+        if(index.length !== 6){
+            alert("Индекс должен содержать 6 символов!");
             return;
         }
         if(!address.val()){
