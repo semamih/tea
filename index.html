@@ -46,33 +46,9 @@
             background-image: url('images/right-arrow.png');
             color: transparent;
         }
-
-        /*---------------------------------*/
-        .ui-accordion .ui-accordion-header {
-            background-color: #0d6efd;
-            color: #fff;
-            padding: 25px;
-            border-radius: 10px;
-            margin-bottom: 16px;
-        }
-        .ui-accordion .ui-accordion-header-active {
-            font-weight: bold;
-            margin-bottom: 0;
-        }
-        .ui-accordion .ui-accordion-content {
-            color: #000;
-            border: none;
-            height: 75px;
-            margin-top: 10px;
-        }
-        .ui-accordion .ui-accordion-content p {
-            margin: 0;
-        }
         .my-custom-container {
             width: 50%;
         }
-
-        /*---------------------------------*/
         .ui-accordion-header .custom-icon-open {
             background-image: url("images/arrow.png");
             background-size: cover;
@@ -97,43 +73,19 @@
             top: 50%;
             transform: translateY(-50%);
         }
-        .banner-text:first-child {
-            padding-top: 190px;
-        }
-        .banner-text h2 {
-            font-size: 40px;
-        }
-        .banner-text p {
-            font-size: 20px;
-        }
         @media (max-width: 1290px) {
             .my-custom-container{
                 width:75%;
-            }
-            .banner-text{
-                padding-top: 130px;
-                padding-left: 120px;
             }
         }
         @media (max-width: 1000px) {
             .my-custom-container{
                 width:75%;
             }
-            .banner-text{
-                padding-top: 100px;
-                padding-left: 80px;
-            }
         }
         @media (max-width: 767px) {
             .mini-label {
                 width: 100%;
-            }
-            .banner-text{
-                padding-top: 50px;
-                padding-left: 30px;
-            }
-            .banner-text h2 {
-                font-size: 30px;
             }
             .my-custom-container {
                 width: 90%;
@@ -176,19 +128,6 @@
             }
         }
         @media (max-width: 470px) {
-            .banner-text{
-                padding-top: 30px;
-                padding-left: 10px;
-            }
-            .banner-text h2 {
-                font-size: 20px;
-            }
-            .banner-text p {
-                font-size: 14px;
-            }
-            .banner-text button {
-                font-size: 12px;
-            }
             .slick-prev {
                 top: 220px;
             }
@@ -207,19 +146,6 @@
             }
         }
         @media (max-width: 375px) {
-            .banner-text{
-                padding-top: 20px;
-                padding-left: 10px;
-            }
-            .banner-text h2 {
-                font-size: 17px;
-            }
-            .banner-text p {
-                font-size: 12px;
-            }
-            .banner-text button {
-                font-size: 12px;
-            }
             .slick-prev {
                 top: 180px;
                 height: 23px;
@@ -229,6 +155,12 @@
                 top: 180px;
                 height: 23px;
                 width: 23px;
+            }
+            .slick-prev:hover, .slick-prev:focus {
+                background-size: 23px 23px;
+            }
+            .slick-next:hover, .slick-next:focus {
+                background-size: 23px 23px;
             }
         }
         @media (max-width: 340px) {
@@ -281,8 +213,8 @@
         <div class="container">
             <div class="position-relative">
                 <img src="images/banner-1.png" alt="" class="img-fluid ">
-                <div class="position-absolute top-0 start-0  banner-text pt-lg-5 mt-lg-5 ps-lg-5 ms-lg-5 ">
-                    <h2 class="mb-3 mb-md-5 fw-bold mt-lg-5">Скидки на травянные чаи</h2>
+                <div class="position-absolute top-0 start-0 pt-lg-5 mt-lg-5 ps-sm-5 ms-lg-5 ps-2">
+                    <h2 class="mb-3 mb-md-5 fw-bold mt-sm-5 mt-2">Скидки на травянные чаи</h2>
                     <p class="mb-3 mb-md-5">Узнай все подробности, заполнив заявку</p>
                     <button class="btn btn-primary ps-sm-5 pe-sm-5 hvr-grow">Заполнить</button>
                 </div>
@@ -291,8 +223,8 @@
         <div class="container">
             <div class="position-relative ">
                 <img src="images/banner-2.png" alt="" class="img-fluid">
-                <div class="position-absolute top-0 start-0  banner-text pt-lg-5 mt-lg-5 ps-lg-5 ms-lg-5">
-                    <h2 class="mb-3 mb-md-5 fw-bold mt-lg-5">Закажи три пачки чая <br> и
+                <div class="position-absolute top-0 start-0 pt-lg-5 mt-lg-5 ps-sm-5 ms-lg-5 ps-3">
+                    <h2 class="mb-3 mb-md-5 fw-bold mt-sm-5 mt-3">Закажи три пачки чая <br> и
                         получи подарок</h2>
                     <button class="btn btn-primary ps-sm-5 pe-sm-5 hvr-grow">Заказать</button>
                 </div>
@@ -301,8 +233,8 @@
         <div class="container ">
             <div class="position-relative ">
                 <img src="images/banner-3.png" alt="" class="img-fluid">
-                <div class="position-absolute top-0 start-0 banner-text pt-lg-5 mt-lg-5 ps-lg-5 ms-lg-5">
-                    <h2 class="mb-3 mb-md-5 fw-bold mt-lg-5">Попробуй нашу новинку <br> —
+                <div class="position-absolute top-0 start-0 pt-lg-5 mt-lg-5 ps-sm-5 ms-lg-5 ps-3">
+                    <h2 class="mb-3 mb-md-5 fw-bold mt-sm-5 mt-3">Попробуй нашу новинку <br> —
                         ягодный чай</h2>
                     <button class="btn btn-primary ps-sm-5 pe-sm-5 hvr-grow">Заказать</button>
                 </div>
@@ -368,31 +300,31 @@
 <div class="container my-custom-container mb-5">
     <h2 class="fw-bold text-center mb-5 mt-4">Ответы на часто задаваемые вопросы</h2>
     <div id="accordion">
-        <h3>Собираете ли вы подарочные боксы?</h3>
+        <h3 class="bg-primary rounded-2 text-white fw-bold p-4">Собираете ли вы подарочные боксы?</h3>
         <div>
             <p>
                 Да, у нас есть такая услуга. Мы можем собрать подарочный бокс на любой вкус, объем и стоимость!
             </p>
         </div>
-        <h3>Сколько у вас разновидностей чая?</h3>
+        <h3 class="bg-primary rounded-2 text-white p-4">Сколько у вас разновидностей чая?</h3>
         <div>
             <p>
                 У нас есть широкий выбор чаёв, включающий черные, зеленые, белые, травяные и фруктовые чаи. Вы обязательно найдете что-то на свой вкус!
             </p>
         </div>
-        <h3>В какой срок осуществляется доставка?</h3>
+        <h3 class="bg-primary rounded-2 text-white p-4">В какой срок осуществляется доставка?</h3>
         <div>
             <p>
                 Доставка осуществляется в течение 3-5 рабочих дней с момента подтверждения заказа.
             </p>
         </div>
-        <h3>У вас обновляется ассортимент?</h3>
+        <h3 class="bg-primary rounded-2 text-white  p-4">У вас обновляется ассортимент?</h3>
         <div>
             <p>
                 Да, наш ассортимент регулярно обновляется, чтобы предложить вам новинки и лучшие предложения.
             </p>
         </div>
-        <h3>Какого объема у вас пачки чая?</h3>
+        <h3 class="bg-primary rounded-2 text-white p-4">Какого объема у вас пачки чая?</h3>
         <div>
             <p>
                 Наши пачки чая доступны в различных объемах, начиная от 50 грамм и до 500 грамм, чтобы удовлетворить любые ваши потребности.
@@ -402,7 +334,7 @@
 </div>
 <div class="container mb-5 text-center wow animate__backInDown" id="order-block" >
     <h2 class="fw-bold text-center mb-5 mt-5">Сделать заказ</h2>
-    <div class="w-50 text-start m-auto">
+    <div class="text-start m-auto col-6">
         <div class="row">
             <div class="col-md-4">
                 <label class="mini-label">

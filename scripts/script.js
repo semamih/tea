@@ -21,7 +21,7 @@ $(document).ready(function () {
                 icons: {
                     header: "custom-icon-open",
                     activeHeader: "custom-icon-close",
-                }
+                },
             }
         );
     } );
@@ -34,11 +34,16 @@ $(document).ready(function () {
     let address = $("#address");
 
 
-    index.keydown(function(e){
-        if(isNaN(parseInt(e.key)) && e.key !== "Backspace" ){
+    $('#index').keydown(function(e) {
+        // Проверяем нажатие клавиши
+        if (isNaN(parseInt(e.key)) && e.key !== "Backspace") {
             return false;
         }
 
+        // Проверяем длину поля ввода
+        if ($(this).val().length >= 6 && e.key !== "Backspace") {
+            return false;
+        }
     });
 
 
@@ -47,7 +52,7 @@ $(document).ready(function () {
             alert("Введите имя!");
             return;
         }
-        if(!surname.val()){
+        if(!surname.val()){2
             alert("Введите фамилию!");
             return;
         }
@@ -63,10 +68,6 @@ $(document).ready(function () {
             alert("Введите индекс!");
             return;
         }
-        if(index.length !== 6){
-            alert("Индекс должен содержать 6 символов!");
-            return;
-        }
         if(!address.val()){
             alert("Введите адрес!");
             return;
@@ -75,6 +76,8 @@ $(document).ready(function () {
         $("#order-block").css("display", "none");
         alert("Спасибо за заказ! Мы свяжемся с вами в ближайшее время!");
     });
+
+
 
 })
 
